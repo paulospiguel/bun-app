@@ -1,0 +1,36 @@
+POST http://localhost:3000/create
+content-type: application/json
+language: "pt"
+
+{
+    "name": "Paulo Spiguel",
+    "email": "test@test.com"
+}
+
+###
+GET http://localhost:3000
+
+### USER LIST ###
+GET http://localhost:3000/user
+
+### USER CREATE ###
+POST http://localhost:3000/user/create
+content-type: application/json
+language: "pt"
+
+{
+    "name": "Paulo Spiguel",
+    "email": "test@test.com"
+}
+
+### USER UPDATE ###
+PUT http://localhost:3000/user/77989174-d216-4257-9ef7-46dfb13c1377
+content-type: application/json
+
+{
+    "name": "Paulo Spiguel",
+    "email": "pp@pp.com"
+}
+
+### USER DELETE ###
+DELETE http://localhost:3000/user/update
